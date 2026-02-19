@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  background: #0b0b0f; /* simple black */
+  color: rgba(255,255,255,0.88);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+}
+
+/* Clean selection */
+::selection { background: rgba(255,255,255,0.15); }
+
+/* Minimal “card” */
+.card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+}
+
+/* Subtle divider */
+.divider {
+  border-color: rgba(255,255,255,0.08);
+}
+
+/* Soft hover */
+.hovercard {
+  transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+.hovercard:hover {
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(255,255,255,0.14);
+}
