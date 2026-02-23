@@ -259,7 +259,7 @@ function Section({ id, title, subtitle, children }) {
   );
 }
 
-const RESUME_URL = "/resume.pdf";
+const RESUME_URL = `${import.meta.env.BASE_URL}resume.pdf`;
 
 function downloadResume() {
   const a = document.createElement("a");
@@ -371,7 +371,7 @@ return (
  *  WORKING CHATBOT (TYPE + ENTER WORKS)
  *  ========================= */
 function RecruiterChatBot() {
-  const RESUME_URL = "/resume.pdf";
+const RESUME_URL = `${import.meta.env.BASE_URL}resume.pdf`;
 
   const [messages, setMessages] = useState([
     {
